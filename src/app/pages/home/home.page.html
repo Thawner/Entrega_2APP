@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+     <ion-title class="ion-text-center">Te Llevo App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content  [fullscreen]="true">
+  <ion-card class="ion-padding">
+    <img  src="../../../assets/img/Tellevo.png" class="Logo">
+  </ion-card>
+  
+  <ion-button expand="block" (click)="goToLogin()" color="success">
+    Login
+  </ion-button>
+
+  <ion-button  expand="block" [routerLink]="['/registro']" color="">
+    Crea una cuenta
+  </ion-button>
+
+</ion-content>
